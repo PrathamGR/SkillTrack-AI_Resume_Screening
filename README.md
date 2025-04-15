@@ -1,114 +1,107 @@
-📄 Skilltrack - AI Resume Screening System
-Skilltrack is an AI-powered resume screening system that simplifies the hiring process by leveraging advanced text analysis and automated features. This tool processes resumes, extracts key details, and matches them to job requirements. It produces structured outputs, including downloadable Excel files with candidate details, and even facilitates sending results via email.
+# 📄 Skilltrack - AI Resume Screening System
 
-Features
-Individual Analysis
-Upload a single resume and perform AI-powered analysis.
+Skilltrack is an AI-powered resume screening system that simplifies the hiring process by leveraging advanced text analysis and automation. This tool processes resumes, extracts key details, and matches them to job requirements. It generates structured outputs, including downloadable Excel files with candidate details, and facilitates emailing results directly to HR.
 
-Extract detailed insights into:
+---
 
-Basic Information (Name, Email, Phone)
+## 🚀 Features
 
-Profile Summary
+### ✅ Individual Analysis
+- Upload a single resume and perform **AI-powered analysis**.
+- Extract detailed insights into:
+  - Basic Information (Name, Email, Phone)
+  - Profile Summary
+  - Work Experience
+  - Education
+  - Technical Skills
+  - Projects
+  - Certificates
+- Interact with the **AI-powered Q&A** system to ask questions about the resume.
 
-Work Experience
+### 📂 Bulk Resume Screening
+- Upload multiple resumes and a job requirements file.
+- Automatically identify resumes that match job requirements.
+- Extract and structure key candidate information:
+  - **Filename**
+  - **Name**
+  - **Contact (Phone)**
+  - **Email**
+  - **LinkedIn**
+- Automatically fill missing fields with **NA** where details are not present.
+- Generate a downloadable Excel sheet with auto-adjusted column widths.
+- Email results directly to HR in one click.
 
-Education
+---
 
-Technical Skills
+## 📦 Requirements
 
-Projects
-
-Certificates
-
-Interact with the AI-powered Q&A system to ask questions about the resume.
-
-Bulk Resume Screening
-Upload multiple resumes and a job requirements file.
-
-Automatically identify resumes that meet job requirements.
-
-Extract and structure key candidate information:
-
-Filename
-
-Name
-
-Contact (Phone)
-
-Email
-
-LinkedIn
-
-Missing fields are automatically filled with NA.
-
-Download results as an Excel file with auto-adjusted column widths.
-
-Email results to HR in one click.
-
-Requirements
-Dependencies
-Install the following Python libraries:
-
-bash
+### 🔧 Dependencies
+Install the required Python libraries:
+```bash
 pip install streamlit pandas PyPDF2 openpyxl
-Environment
-Ensure that:
 
-Groq API Key: Add your Groq API key to a .env file in the root directory.
+⚙️ Environment Setup
+Create a .env file in the root directory and add the following:
 
 env
+Copy
+Edit
 GROQ_API_KEY=your_api_key
-SMTP Details: Configure your sender email and app password for Gmail or another SMTP service.
-
-Setup and Installation
+EMAIL_SENDER=your_email@gmail.com
+EMAIL_PASSWORD=your_email_app_password
+EMAIL_RECEIVER=hr_email@example.com
+🛠️ Setup and Installation
 Clone the repository:
 
 bash
+Copy
+Edit
 git clone https://github.com/<your-repo-url>
 cd skilltrack-resume-screening
 Install dependencies:
 
 bash
+Copy
+Edit
 pip install -r requirements.txt
-Set the environment variable for your Groq API Key:
+Set up environment variables in a .env file as shown above.
 
-Create a .env file in the root directory with the following:
-
-env
-GROQ_API_KEY=your_api_key
 Run the application:
 
 bash
+Copy
+Edit
 streamlit run app.py
-How to Use
-Individual Analysis
+💼 How to Use
+🧍 Individual Analysis
 Select Individual Analysis mode from the sidebar.
 
-Upload a resume (.pdf or .txt file).
+Upload a resume (.pdf or .txt).
 
-Explore the following tabs:
+Use tabs to:
 
-AI-Powered Analysis: Ask AI questions about the resume and get detailed answers.
+View extracted sections like Basic Info, Experience, Skills, etc.
 
-Resume Breakdown: View extracted sections like Basic Info, Work Experience, Education, etc.
+Ask questions using the AI-powered Q&A system.
 
-Bulk Resume Screening
+📁 Bulk Resume Screening
 Select Resume Screening mode from the sidebar.
 
 Upload:
 
-Multiple resumes (.pdf or .txt files).
+Multiple resumes (.pdf or .txt)
 
-Job requirements file (.pdf or .txt).
+One job requirements file (.pdf or .txt)
 
-Review matching resumes and download the Excel sheet with structured data.
+Automatically screen resumes against the job.
 
-Optionally, send results via email to HR.
+Download the structured Excel sheet with candidate details.
 
-Outputs
-Excel File
-Generated Excel files will include the following columns:
+Optionally, email results directly to HR.
+
+📤 Outputs
+🧾 Excel File
+Generated Excel files include the following columns:
 
 Filename
 
@@ -120,8 +113,10 @@ Email
 
 LinkedIn
 
-Email Results
-Results can be emailed directly to HR via the built-in SMTP functionality.
+Fields not found in resumes are auto-filled with NA.
 
-License
+📧 Email Results
+Send the generated Excel file directly to HR using SMTP email integration.
+
+🪪 License
 This project is licensed under the MIT License.
