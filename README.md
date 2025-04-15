@@ -42,47 +42,35 @@ pip install streamlit pandas PyPDF2 openpyxl
 ```
 ⚙️ Environment Setup
 Create a .env file in the root directory and add the following:
-
-env
-Copy
-Edit
+```
 GROQ_API_KEY=your_api_key
 EMAIL_SENDER=your_email@gmail.com
 EMAIL_PASSWORD=your_email_app_password
 EMAIL_RECEIVER=hr_email@example.com
+```
 🛠️ Setup and Installation
 Clone the repository:
-
-bash
-Copy
-Edit
+```
 git clone https://github.com/<your-repo-url>
 cd skilltrack-resume-screening
+```
 Install dependencies:
-
-bash
-Copy
-Edit
+```
 pip install -r requirements.txt
+```
 Set up environment variables in a .env file as shown above.
 
 Run the application:
-
-bash
-Copy
-Edit
+```
 streamlit run app.py
+```
 💼 How to Use
 🧍 Individual Analysis
-Select Individual Analysis mode from the sidebar.
-
-Upload a resume (.pdf or .txt).
-
-Use tabs to:
-
-View extracted sections like Basic Info, Experience, Skills, etc.
-
-Ask questions using the AI-powered Q&A system.
+    -Select Individual Analysis mode from the sidebar.
+    -Upload a resume (.pdf or .txt).
+    -Use tabs to:
+      -View extracted sections like Basic Info, Experience, Skills, etc.
+      -Ask questions using the AI-powered Q&A system.
 
 📁 Bulk Resume Screening
 Select Resume Screening mode from the sidebar.
