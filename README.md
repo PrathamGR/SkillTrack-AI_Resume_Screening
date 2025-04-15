@@ -65,12 +65,12 @@ Run the application:
 streamlit run app.py
 ```
 💼 How to Use
-###🧍 Individual Analysis:
-    - Select Individual Analysis mode from the sidebar.
-    - Upload a resume (.pdf or .txt).
-    - Use tabs to:
-      - View extracted sections like Basic Info, Experience, Skills, etc.
-      - Ask questions using the AI-powered Q&A system.
+### 🧍 Individual Analysis:
+- Select Individual Analysis mode from the sidebar.
+- Upload a resume (.pdf or .txt).
+- Use tabs to:
+  - View extracted sections like Basic Info, Experience, Skills, etc.
+  - Ask questions using the AI-powered Q&A system.
 
 📁 Bulk Resume Screening
 Select Resume Screening mode from the sidebar.
