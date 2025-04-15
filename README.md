@@ -72,35 +72,23 @@ streamlit run app.py
   - View extracted sections like Basic Info, Experience, Skills, etc.
   - Ask questions using the AI-powered Q&A system.
 
-📁 Bulk Resume Screening
-Select Resume Screening mode from the sidebar.
-
-Upload:
-
-Multiple resumes (.pdf or .txt)
-
-One job requirements file (.pdf or .txt)
-
-Automatically screen resumes against the job.
-
-Download the structured Excel sheet with candidate details.
-
-Optionally, email results directly to HR.
+### 📁 Bulk Resume Screening
+- Select Resume Screening mode from the sidebar.
+- Upload:
+  - Multiple resumes (.pdf or .txt)
+  - One job requirements file (.pdf or .txt)
+- Automatically screen resumes against the job.
+- Download the structured Excel sheet with candidate details.
+- Optionally, email results directly to HR.
 
 📤 Outputs
-🧾 Excel File
+### 🧾 Excel File
 Generated Excel files include the following columns:
-
-Filename
-
-Name
-
-Contact (Phone)
-
-Email
-
-LinkedIn
-
+- Filename
+- Name
+- Contact (Phone)
+- Email
+- LinkedIn
 Fields not found in resumes are auto-filled with NA.
 
 📧 Email Results
