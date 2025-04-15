@@ -65,7 +65,7 @@ Run the application:
 streamlit run app.py
 ```
 💼 How to Use
-🧍 Individual Analysis
+###🧍 Individual Analysis:
     - Select Individual Analysis mode from the sidebar.
     - Upload a resume (.pdf or .txt).
     - Use tabs to:
